@@ -10,34 +10,23 @@ img{
 
 .container{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 40px;
 }
 
-.carousel-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border: 1px solid red;
-}
-
 .item-container{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    
+    border: 1px solid blue;   
 }
 
 .item{
-    display: flex;
     justify-content: center; 
     display: none;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .active {
