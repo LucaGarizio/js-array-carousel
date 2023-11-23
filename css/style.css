@@ -3,3 +3,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img{
+    width: 50%;
+ }
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.item-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.item{
+    display: flex;
+    justify-content: center; 
+    display: none;
+    max-width: 80%;
+}
+
+.active {
+    display: flex;
+}
+
+.circle1 .fa-solid{
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% -50%);
+    margin-top: 10px;
+}
+
+.circle2 .fa-solid{
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% -50%);
+    margin-bottom: 10px;
+}
+
+
+.fa-solid{
+    color: white;
+    font-size: 40px; 
+    text-align: center;
+}
+
+
+
