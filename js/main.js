@@ -5,7 +5,7 @@
 
 // prendere tutti gli elementi sotto la classe item e salvarli in una variabile
 const item = document.getElementsByClassName("item");
-console.log(item[0]);
+console.log(item);
 // variabile con valore iniziale 0
 let activeItems = 0;
 // creazione variabile per referenza
@@ -17,16 +17,20 @@ next.addEventListener("click",
 
     function(){
         // controllare se ci sono altre immagini da mostrare
-        if (activeItems < item.length -1)
-        // rimuovere la classe attivo dalla foto attuale
-        item[activeItems].classList.remove("active");
-        // aumenta l'index di 1
-        activeItems++;
-        // aggiungere la classe active alla foto successiva 
-        item[activeItems].classList.add("active");
-    }   
+        if (activeItems < item.length -1) {
+            // rimuovere la classe attivo dalla foto attuale
+            item[activeItems].classList.remove("active");
+            // aumenta l'index di 1
+            activeItems++;
+            // aggiungere la classe active alla foto successiva 
+            item[activeItems].classList.add("active");
+            
+            if (activeItems === item.length -1) {
+                next.classList.add("hidden");
+                }
+        }
+    }
 )
-
 
 prev.addEventListener("click",
 
@@ -40,5 +44,9 @@ prev.addEventListener("click",
         // aggiungere la classe active alla foto precedente 
         item[activeItems].classList.add("active");
         }
-    }
+
+        if (activeItems > 0) {
+            next.classList.remove("hidden");
+        } 
+    }   
 )

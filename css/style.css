@@ -25,17 +25,20 @@ img{
 .item{
     justify-content: center; 
     display: none;
-    max-width: 100%;
+    max-width: 100%;   
 }
 
 .active {
     display: flex;
 }
 
+
+
 .circle1 .fa-solid{
     width: 40px;
     height: 40px;
     background-color: grey;
+    opacity: 0.5;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -48,6 +51,7 @@ img{
     width: 40px;
     height: 40px;
     background-color: grey;
+    opacity: 0.5;
     border-radius: 50%;
     position: absolute;
     bottom: 0;
@@ -56,6 +60,13 @@ img{
     margin-bottom: 10px;
 }
 
+.flex{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
 
 .fa-solid{
     color: white;
