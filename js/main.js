@@ -14,6 +14,8 @@ const prev = document.getElementById("prev");
 next.addEventListener("click",
 
     function(){
+
+        
         if (activeItems < item.length - 1)
         item[activeItems].classList.remove("active");
 
@@ -23,3 +25,18 @@ next.addEventListener("click",
     }   
 )
 
+
+
+prev.addEventListener("click",
+
+    function(){
+        if (activeItems > 0){
+
+            item[activeItems].classList.remove("active");
+
+            activeItems--;
+
+            item[activeItems].classList.add("active");
+        }
+    }
+)
